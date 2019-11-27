@@ -1,0 +1,76 @@
+{
+  "name": "ogaabeg",
+  "version": "1.0.0",
+  "description": "A platform that allow nigerian citizens document their experiences about human right violations and talk about they can it should be handled",
+  "main": "app.js",
+  "scripts": {
+    "server": "nodemon ./backend/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gtstride/ogaAbeg.git"
+  },
+  "keywords": [
+    "Human",
+    "right",
+    "violation",
+    "abuse",
+    "bad",
+    "good leadership",
+    "freedom of speech",
+    "speech",
+    "expression",
+    "protection",
+    "life",
+    "properties",
+    "open",
+    "governance",
+    "accountability",
+    "justices",
+    "police",
+    "reform",
+    "security",
+    "democracy",
+    "global",
+    "politics",
+    "responsibilities",
+    "good government",
+    "citizens' right",
+    "participation",
+    "electoral reform",
+    "peace",
+    "harmony",
+    "insurgency",
+    "terrorism",
+    "SDG",
+    "goals",
+    "digital",
+    "equality",
+    "gender equality",
+    "balance",
+    "child abuse",
+    "child right"
+  ],
+  "author": "Godstime Agho & Kehinde Adegboye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gtstride/ogaAbeg/issues"
+  },
+  "homepage": "https://github.com/Gtstride/ogaAbeg#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.12",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "react-router-dom": "^5.1.2",
+    "validator": "^12.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  }
+}
