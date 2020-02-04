@@ -1,11 +1,11 @@
 {
-  "name": "ogaabeg",
+  "name": "ogaibeg",
   "version": "1.0.0",
   "description": "A platform that allow nigerian citizens document their experiences about human right violations and talk about they can it should be handled",
-  "main": "app.js",
+  "main": "server.js",
+  "type": "module",
   "scripts": {
-    "server": "nodemon ./backend/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --exec babel-node -- ./server.js"
   },
   "repository": {
     "type": "git",
@@ -59,6 +59,14 @@
   },
   "homepage": "https://github.com/Gtstride/ogaAbeg#readme",
   "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/runtime": "^7.8.4",
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-register": "^6.26.0",
+    "babelrc": "0.0.7",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "concurrently": "^5.0.0",
@@ -71,6 +79,8 @@
     "validator": "^12.1.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "nodemon": "^2.0.1"
   }
 }
