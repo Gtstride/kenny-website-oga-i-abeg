@@ -2,22 +2,23 @@ import express from "express";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
 
-import users from "./routes/api/users";
-import profile from "./routes/api/profile";
-import posts from "./routes/api/posts";
+import users from "./backend/routes/api/users";
+import profile from "./backend/routes/api/profile";
+import posts from "./backend/routes/api/posts";
 
 const app = express();
 
-const db = require("./config/keys").mongoURI;
+
+// Database Configuration
+const db = require("./backend/config/keys").mongoURI;
 
 mongoose
   .connect(db)
   .then(() => console.log("MongoDB Connected Successfully"))
-  .catch(err => console.log(err));
-// const express = require('express')
-// const bodyParser = require('body-parser')
-
-// Database Configuration
+  .catch((err) => {
+    console.log('Unable to connect to Database!');
+    console.log(err);
+  })
 
 // Body parser middleware
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -37,14 +38,4 @@ app.get("/", (req, res) => {
   });
 });
 
-// app.post("/", (req, res) => {
-//   res.status(201).json({
-//     status: "Success",
-//     messsage: "Just trying out this post routes"
-//   });
-// });
-
-app.listen(port, () => console.log(`Web App is live on port ${port}`));
-function newFunction() {
-  return console.log;
-}
+app.listen(port, () => console.log(`Server is live and runs on port https://localhost:${port}`));
