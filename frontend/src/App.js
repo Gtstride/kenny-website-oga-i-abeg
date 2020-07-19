@@ -1,10 +1,25 @@
-import React from 'react'
-import { render } from 'react-dom'
+import React, { useEffect, useState } from 'react'
 
-export default function App () {
-  return(
-    React.createElement("div", {}, "This is the app")
+
+import Spinner from './components/Spinner'
+import NavBar from './pages/NavBar'
+import Home from './pages/Home'
+import AboutUs from './pages/AboutUs'
+import Gallery from './pages/Gallery'
+import Footer from './pages/Footer'
+
+import './App.css'
+
+function App() {
+  return (
+    <div className="App">
+      <NavBar />
+      <Home />
+      <AboutUs />
+      <Gallery />
+      <Footer />
+    </div>
   )
 }
 
-render(React.createElement(App), document.getElementById("root"))
+export default App

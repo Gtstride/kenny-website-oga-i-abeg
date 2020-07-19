@@ -1,28 +1,46 @@
 {
-  "name": "frontend",
-  "version": "1.0.0",
-  "description": "ogaibeg application client-side",
-  "main": "index.js",
-  "scripts": {
-    "dev": "parcel src/index.html",
-    "format": "prettier \"src/**/*.{js, html}\" --write",
-    "lint": "eslint \"src/**/*.{js, jsx}\" --quiet",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Hill Onyechekwa",
-  "license": "MIT",
-  "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.10.0",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.18.3",
-    "parcel-bundler": "^1.12.4",
-    "prettier": "^1.19.1"
-  },
+  "name": "ogaibeg",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0"
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^5.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "lint": "eslint --fix src",
+    "pretty": "prettier --write src",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5"
   }
 }
