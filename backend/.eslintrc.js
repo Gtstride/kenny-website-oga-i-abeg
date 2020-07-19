@@ -1,9 +1,6 @@
 module.exports = {
   rules: {
     "no-console": 0,
-    // "no-shadow": 0,
-    //   "consistent-return": "off",
-    //   "prefer-destructuring": 1,
     "no-undef": 1,
     "no-multi-assign": "1",
     "no-param-reassign": "2",
